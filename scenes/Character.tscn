@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/Character.gd" type="Script" id=1]
+[ext_resource path="res://resources/images/Body_Male_1.png" type="Texture" id=2]
+[ext_resource path="res://resources/images/Hair_1.png" type="Texture" id=3]
+[ext_resource path="res://resources/images/Coat_1.png" type="Texture" id=4]
+[ext_resource path="res://resources/images/Trousers_1.png" type="Texture" id=5]
+[ext_resource path="res://resources/images/Shoes_1.png" type="Texture" id=6]
+
+[node name="Node2D" type="Node2D" index="0"]
+
+position = Vector2( -0.122183, 0 )
+script = ExtResource( 1 )
+SPEED = 200
+
+[node name="Body" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 2 )
+vframes = 3
+hframes = 4
+frame = 4
+_sections_unfolded = [ "Animation", "Material" ]
+
+[node name="Hair" type="Sprite" parent="." index="1"]
+
+texture = ExtResource( 3 )
+hframes = 4
+_sections_unfolded = [ "Animation", "Material", "Region" ]
+
+[node name="Coat" type="Sprite" parent="." index="2"]
+
+texture = ExtResource( 4 )
+vframes = 3
+hframes = 4
+frame = 4
+_sections_unfolded = [ "Animation", "Material", "Region" ]
+
+[node name="Trousers" type="Sprite" parent="." index="3"]
+
+texture = ExtResource( 5 )
+vframes = 3
+hframes = 4
+frame = 4
+_sections_unfolded = [ "Animation", "Material", "Region" ]
+
+[node name="Shoes" type="Sprite" parent="." index="4"]
+
+texture = ExtResource( 6 )
+vframes = 3
+hframes = 4
+frame = 4
+_sections_unfolded = [ "Animation", "Material", "Region" ]
+
+
