@@ -10,7 +10,7 @@ source_file="res://resources/images/Trousers_1.png"
 source_md5="a2cf5c5a8c47e68c28762b1f59370de1"
 
 dest_files=[ "res://.import/Trousers_1.png-82c61eab442106fc9f1b356c0d47eebd.stex" ]
-dest_md5="f8374e433e83c4ae7a40b4ea80c500e4"
+dest_md5="f8a420667c07521f88eb39c0850ec824"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

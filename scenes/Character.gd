@@ -25,7 +25,8 @@ func _process(delta):
 		
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * SPEED
-	#	$AnimatedSprite.play()
+		#$AnimationPlayer.play( "WalkDown" )
+		#$AnimatedSprite.play()
 	#else:
 	#	$AnimatedSprite.stop()	
 	position += velocity * delta
@@ -33,10 +34,11 @@ func _process(delta):
 	position.y = clamp( position.y, 0, screenSize.y )
 	
 	
-	#if velocity.x != 0:
-	#	$AnimatedSprite.animation = "right"
-	#	$AnimatedSprite.flip_v = false
-	#	$AnimatedSprite.flip_h = velocity.x < 0
-	#elif velocity.y != 0:
-	#	$AnimatedSprite.animation = "up"
-	#	$AnimatedSprite.flip_v = velocity.y > 0
+	if velocity.x != 0:
+		$AnimationPlayer.play( "WalkRight" )
+		#$AnimatedSprite.flip_v = false
+		#$AnimatedSprite.flip_h = velocity.x < 0
+	elif velocity.y != 0:
+		$AnimationPlayer.play( "WalkDown" )
+		#$AnimatedSprite.animation = "up"
+		#$AnimatedSprite.flip_v = velocity.y > 0

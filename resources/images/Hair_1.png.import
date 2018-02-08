@@ -10,7 +10,7 @@ source_file="res://resources/images/Hair_1.png"
 source_md5="84d93c8d2f1922bf4b0ed592276a219b"
 
 dest_files=[ "res://.import/Hair_1.png-19d752c9a25f5adccb0e2907c95d56b1.stex" ]
-dest_md5="f2b42f526a4d800baf9803152b97a9c0"
+dest_md5="c2b842ec8aa906d62fbdaceee8e64772"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

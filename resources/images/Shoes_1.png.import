@@ -10,7 +10,7 @@ source_file="res://resources/images/Shoes_1.png"
 source_md5="d7dacce4598a6ea3f4f7fa2965fddac1"
 
 dest_files=[ "res://.import/Shoes_1.png-4af2a175a00fb3cb31f3a9455043e52f.stex" ]
-dest_md5="16ffabdf11838725364be35cf4a436d3"
+dest_md5="2c746df08d2b492304273c402b3df941"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

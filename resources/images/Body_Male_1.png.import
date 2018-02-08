@@ -10,7 +10,7 @@ source_file="res://resources/images/Body_Male_1.png"
 source_md5="0de594bec7abb25b910f52f953546899"
 
 dest_files=[ "res://.import/Body_Male_1.png-82429829e819a2cb9d322150e91676cc.stex" ]
-dest_md5="6eff495acd5ad20211fc44a004df4e00"
+dest_md5="27b5e213e737218a9ab9eba98a6bab26"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
