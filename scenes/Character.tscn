@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/Character.gd" type="Script" id=1]
 [ext_resource path="res://resources/images/Body_Male_1.png" type="Texture" id=2]
@@ -10,9 +10,9 @@
 [sub_resource type="Animation" id=1]
 
 resource_name = "WalkDown"
-length = 0.4
+length = 0.6
 loop = true
-step = 0.1
+step = 0.15
 tracks/0/type = "value"
 tracks/0/path = NodePath("Hair:frame")
 tracks/0/interp = 1
@@ -32,10 +32,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 0, 8 ]
+"values": [ 4, 0, 4, 8 ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("Coat:frame")
@@ -44,10 +44,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 0, 8 ]
+"values": [ 4, 0, 4, 8 ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("Trousers:frame")
@@ -56,10 +56,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 0, 8 ]
+"values": [ 4, 0, 4, 8 ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Shoes:frame")
@@ -68,10 +68,77 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 0, 8 ]
+"values": [ 4, 0, 4, 8 ]
+}
+
+[sub_resource type="Animation" id=4]
+
+resource_name = "WalkLeft"
+length = 0.8
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Hair:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 1 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Body:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 1, 5, 9 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Coat:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 1, 5, 9 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Trousers:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 1, 5, 9 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Shoes:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 5, 1, 5, 9 ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -141,12 +208,78 @@ tracks/4/keys = {
 "values": [ 7, 3, 7, 11 ]
 }
 
+[sub_resource type="Animation" id=3]
+
+resource_name = "WalkUp"
+length = 0.6
+loop = true
+step = 0.15
+tracks/0/type = "value"
+tracks/0/path = NodePath("Hair:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Body:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 2, 6, 10 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Coat:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 2, 6, 10 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Trousers:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 2, 6, 10 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Shoes:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 2, 6, 10 ]
+}
+
 [node name="Node2D" type="Node2D" index="0"]
 
 position = Vector2( -0.122183, 0 )
-scale = Vector2( 4, 4 )
 script = ExtResource( 1 )
-_sections_unfolded = [ "Material", "Transform" ]
+_sections_unfolded = [ "Material", "Transform", "Z Index" ]
 SPEED = 200
 
 [node name="Body" type="Sprite" parent="." index="0"]
@@ -154,14 +287,14 @@ SPEED = 200
 texture = ExtResource( 2 )
 vframes = 3
 hframes = 4
-frame = 7
-_sections_unfolded = [ "Animation", "Material", "Region", "Transform", "Z Index" ]
+frame = 2
+_sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Transform", "Z Index" ]
 
 [node name="Hair" type="Sprite" parent="." index="1"]
 
 texture = ExtResource( 3 )
 hframes = 4
-frame = 3
+frame = 2
 _sections_unfolded = [ "Animation", "Material", "Region" ]
 
 [node name="Coat" type="Sprite" parent="." index="2"]
@@ -169,7 +302,7 @@ _sections_unfolded = [ "Animation", "Material", "Region" ]
 texture = ExtResource( 4 )
 vframes = 3
 hframes = 4
-frame = 7
+frame = 2
 _sections_unfolded = [ "Animation", "Material", "Region" ]
 
 [node name="Trousers" type="Sprite" parent="." index="3"]
@@ -177,7 +310,7 @@ _sections_unfolded = [ "Animation", "Material", "Region" ]
 texture = ExtResource( 5 )
 vframes = 3
 hframes = 4
-frame = 7
+frame = 2
 _sections_unfolded = [ "Animation", "Material", "Region" ]
 
 [node name="Shoes" type="Sprite" parent="." index="4"]
@@ -185,7 +318,7 @@ _sections_unfolded = [ "Animation", "Material", "Region" ]
 texture = ExtResource( 6 )
 vframes = 3
 hframes = 4
-frame = 7
+frame = 2
 _sections_unfolded = [ "Animation", "Material", "Region" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="5"]
@@ -196,7 +329,10 @@ playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
 anims/WalkDown = SubResource( 1 )
+anims/WalkLeft = SubResource( 4 )
 anims/WalkRight = SubResource( 2 )
+anims/WalkUp = SubResource( 3 )
 blend_times = [  ]
+_sections_unfolded = [ "Playback Options" ]
 
 
