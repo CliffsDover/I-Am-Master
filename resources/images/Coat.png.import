@@ -10,7 +10,7 @@ source_file="res://resources/images/Coat.png"
 source_md5="9e5344f2b74e79235202e0d5466f2e3c"
 
 dest_files=[ "res://.import/Coat.png-50dc051e757a19cdbce172567fbdf4e1.stex" ]
-dest_md5="86bf0b7a3f42f615cf88b24896b0170a"
+dest_md5="a5c93ef167407f8c5c2081d3f8329e51"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

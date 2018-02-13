@@ -2,8 +2,8 @@
 
 [ext_resource path="res://scenes/CharacterBase.gd" type="Script" id=1]
 [ext_resource path="res://resources/images/Body.png" type="Texture" id=2]
-[ext_resource path="res://resources/images/Hair_1.png" type="Texture" id=3]
-[ext_resource path="res://resources/images/Coat_1.png" type="Texture" id=4]
+[ext_resource path="res://resources/images/Hair.png" type="Texture" id=3]
+[ext_resource path="res://resources/images/Coat.png" type="Texture" id=4]
 [ext_resource path="res://resources/images/Trousers_1.png" type="Texture" id=5]
 [ext_resource path="res://resources/images/Shoes_1.png" type="Texture" id=6]
 
@@ -282,28 +282,36 @@ scale = Vector2( 4, 4 )
 script = ExtResource( 1 )
 _sections_unfolded = [ "Material", "Transform", "Z Index" ]
 SPEED = 200
+BODY = 0
+HAIR = 0
+COAT = 6
+ROBE = null
+TROUSERS = null
+SKIRT = 0
+MANTLE = null
+SHOES = 0
 
 [node name="Body" type="Sprite" parent="." index="0"]
 
 texture = ExtResource( 2 )
 vframes = 3
 hframes = 40
-frame = 42
+frame = 40
 _sections_unfolded = [ "Animation", "Material", "Offset", "Region", "Transform", "Z Index" ]
 
 [node name="Hair" type="Sprite" parent="." index="1"]
 
 texture = ExtResource( 3 )
-hframes = 4
-frame = 2
+vframes = 10
+hframes = 16
 _sections_unfolded = [ "Animation", "Material", "Region" ]
 
 [node name="Coat" type="Sprite" parent="." index="2"]
 
 texture = ExtResource( 4 )
-vframes = 3
+vframes = 30
 hframes = 4
-frame = 6
+frame = 4
 _sections_unfolded = [ "Animation", "Material", "Region" ]
 
 [node name="Trousers" type="Sprite" parent="." index="3"]
@@ -311,7 +319,7 @@ _sections_unfolded = [ "Animation", "Material", "Region" ]
 texture = ExtResource( 5 )
 vframes = 3
 hframes = 4
-frame = 6
+frame = 4
 _sections_unfolded = [ "Animation", "Material", "Region" ]
 
 [node name="Shoes" type="Sprite" parent="." index="4"]
@@ -319,7 +327,7 @@ _sections_unfolded = [ "Animation", "Material", "Region" ]
 texture = ExtResource( 6 )
 vframes = 3
 hframes = 4
-frame = 6
+frame = 4
 _sections_unfolded = [ "Animation", "Material", "Region" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="5"]
