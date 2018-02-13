@@ -83,100 +83,33 @@ func _ready():
 	COAT = randi() % CoatType_Num
 	TROUSERS = randi() % TrousersType_Num
 	SHOES = randi() % ShoesType_Num
-	#COAT = 2
-	print( COAT )
-	var animations = $AnimationPlayer.get_animation_list()
-	for animation in animations:
-		print( animation )
-	
-	var animation = $AnimationPlayer.get_animation( "WalkDown" )
-	var track = animation.find_track( "Hair:frame")
-	animation.track_set_key_value( track, 0, HAIR * 4 + 0 )
-	
-	track = animation.find_track( "Coat:frame")
-	animation.track_set_key_value( track, 0, COAT * 12 + 4 )
-	animation.track_set_key_value( track, 1, COAT * 12 + 0 )
-	animation.track_set_key_value( track, 2, COAT * 12 + 4 )
-	animation.track_set_key_value( track, 3, COAT * 12 + 8 )	
-	
-	track = animation.find_track( "Trousers:frame")
-	animation.track_set_key_value( track, 0, TROUSERS * 12 + 4 )
-	animation.track_set_key_value( track, 1, TROUSERS * 12 + 0 )
-	animation.track_set_key_value( track, 2, TROUSERS * 12 + 4 )
-	animation.track_set_key_value( track, 3, TROUSERS * 12 + 8 )	
-	
-	track = animation.find_track( "Shoes:frame")
-	animation.track_set_key_value( track, 0, SHOES * 12 + 4 )
-	animation.track_set_key_value( track, 1, SHOES * 12 + 0 )
-	animation.track_set_key_value( track, 2, SHOES * 12 + 4 )
-	animation.track_set_key_value( track, 3, SHOES * 12 + 8 )	
-	
-	animation = $AnimationPlayer.get_animation( "WalkUp" )
-	track = animation.find_track( "Hair:frame")
-	animation.track_set_key_value( track, 0, HAIR * 4 + 2 )
-	
-	track = animation.find_track( "Coat:frame")
-	animation.track_set_key_value( track, 0, COAT * 12 + 4 + 2 )
-	animation.track_set_key_value( track, 1, COAT * 12 + 0 + 2 )
-	animation.track_set_key_value( track, 2, COAT * 12 + 4 + 2 )
-	animation.track_set_key_value( track, 3, COAT * 12 + 8 + 2 )	
 
-	track = animation.find_track( "Trousers:frame")
-	animation.track_set_key_value( track, 0, TROUSERS * 12 + 4 + 2 )
-	animation.track_set_key_value( track, 1, TROUSERS * 12 + 0 + 2 )
-	animation.track_set_key_value( track, 2, TROUSERS * 12 + 4 + 2 )
-	animation.track_set_key_value( track, 3, TROUSERS * 12 + 8 + 2 )	
-
-	track = animation.find_track( "Shoes:frame")
-	animation.track_set_key_value( track, 0, SHOES * 12 + 4 + 2 )
-	animation.track_set_key_value( track, 1, SHOES * 12 + 0 + 2 )
-	animation.track_set_key_value( track, 2, SHOES * 12 + 4 + 2 )
-	animation.track_set_key_value( track, 3, SHOES * 12 + 8 + 2 )	
 	
+	var animations = [ "WalkDown", "WalkUp", "WalkLeft", "WalkRight" ]
+	var offsets = [ 0, 2, 1, 3 ]
+	var tracks = [ "Coat:frame", "Trousers:frame", "Shoes:frame" ]
+	var keys = [ COAT, TROUSERS, SHOES ]
 	
-	animation = $AnimationPlayer.get_animation( "WalkLeft" )
-	track = animation.find_track( "Hair:frame")
-	animation.track_set_key_value( track, 0, HAIR * 4 + 1 )
-
-	track = animation.find_track( "Coat:frame")
-	animation.track_set_key_value( track, 0, COAT * 12 + 4 + 1 )
-	animation.track_set_key_value( track, 1, COAT * 12 + 0 + 1 )
-	animation.track_set_key_value( track, 2, COAT * 12 + 4 + 1 )
-	animation.track_set_key_value( track, 3, COAT * 12 + 8 + 1 )	
-
-	track = animation.find_track( "Trousers:frame")
-	animation.track_set_key_value( track, 0, TROUSERS * 12 + 4 + 1 )
-	animation.track_set_key_value( track, 1, TROUSERS * 12 + 0 + 1 )
-	animation.track_set_key_value( track, 2, TROUSERS * 12 + 4 + 1 )
-	animation.track_set_key_value( track, 3, TROUSERS * 12 + 8 + 1 )	
-
-	track = animation.find_track( "Shoes:frame")
-	animation.track_set_key_value( track, 0, SHOES * 12 + 4 + 1 )
-	animation.track_set_key_value( track, 1, SHOES * 12 + 0 + 1 )
-	animation.track_set_key_value( track, 2, SHOES * 12 + 4 + 1 )
-	animation.track_set_key_value( track, 3, SHOES * 12 + 8 + 1 )	
+	var animation
+	var track
 	
-	animation = $AnimationPlayer.get_animation( "WalkRight" )
-	track = animation.find_track( "Hair:frame")
-	animation.track_set_key_value( track, 0, HAIR * 4 + 3 )
+	var animationIndex = 0
+	for a in animations:
+		animation = $AnimationPlayer.get_animation( a )
+		track = animation.find_track( "Hair:frame")
+		animation.track_set_key_value( track, 0, HAIR * 4 + offsets[ animationIndex ] )
+		var trackIndex = 0
+		for t in tracks:
+			track = animation.find_track( t )
+			animation.track_set_key_value( track, 0, keys[trackIndex] * 12 + 4 + offsets[ animationIndex ] )
+			animation.track_set_key_value( track, 1, keys[trackIndex] * 12 + 0 + offsets[ animationIndex ] )
+			animation.track_set_key_value( track, 2, keys[trackIndex] * 12 + 4 + offsets[ animationIndex ] )
+			animation.track_set_key_value( track, 3, keys[trackIndex] * 12 + 8 + offsets[ animationIndex ] )	
+			trackIndex += 1
+		
+		animationIndex += 1
 	
-	track = animation.find_track( "Coat:frame")
-	animation.track_set_key_value( track, 0, COAT * 12 + 4 + 3 )
-	animation.track_set_key_value( track, 1, COAT * 12 + 0 + 3 )
-	animation.track_set_key_value( track, 2, COAT * 12 + 4 + 3 )
-	animation.track_set_key_value( track, 3, COAT * 12 + 8 + 3 )	
 
-	track = animation.find_track( "Trousers:frame")
-	animation.track_set_key_value( track, 0, TROUSERS * 12 + 4 + 3 )
-	animation.track_set_key_value( track, 1, TROUSERS * 12 + 0 + 3 )
-	animation.track_set_key_value( track, 2, TROUSERS * 12 + 4 + 3 )
-	animation.track_set_key_value( track, 3, TROUSERS * 12 + 8 + 3 )	
-
-	track = animation.find_track( "Shoes:frame")
-	animation.track_set_key_value( track, 0, SHOES * 12 + 4 + 3 )
-	animation.track_set_key_value( track, 1, SHOES * 12 + 0 + 3 )
-	animation.track_set_key_value( track, 2, SHOES * 12 + 4 + 3 )
-	animation.track_set_key_value( track, 3, SHOES * 12 + 8 + 3 )	
 	
 
 func _process(delta):
