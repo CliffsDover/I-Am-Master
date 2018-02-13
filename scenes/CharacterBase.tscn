@@ -4,8 +4,8 @@
 [ext_resource path="res://resources/images/Body.png" type="Texture" id=2]
 [ext_resource path="res://resources/images/Hair.png" type="Texture" id=3]
 [ext_resource path="res://resources/images/Coat.png" type="Texture" id=4]
-[ext_resource path="res://resources/images/Trousers_1.png" type="Texture" id=5]
-[ext_resource path="res://resources/images/Shoes_1.png" type="Texture" id=6]
+[ext_resource path="res://resources/images/Trousers.png" type="Texture" id=5]
+[ext_resource path="res://resources/images/Shoes.png" type="Texture" id=6]
 
 [sub_resource type="Animation" id=1]
 
@@ -317,15 +317,14 @@ _sections_unfolded = [ "Animation", "Material", "Region" ]
 [node name="Trousers" type="Sprite" parent="." index="3"]
 
 texture = ExtResource( 5 )
-vframes = 3
+vframes = 30
 hframes = 4
-frame = 4
 _sections_unfolded = [ "Animation", "Material", "Region" ]
 
 [node name="Shoes" type="Sprite" parent="." index="4"]
 
 texture = ExtResource( 6 )
-vframes = 3
+vframes = 30
 hframes = 4
 frame = 4
 _sections_unfolded = [ "Animation", "Material", "Region" ]

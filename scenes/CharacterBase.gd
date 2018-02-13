@@ -4,15 +4,15 @@ enum BodyType { Male_1 = 0, Female_1, Male_2, Female_2, Male_3, Female_3, Male_4
 
 enum CoatType { None = -1, Coat_1, Coat_2, Coat_3, Coat_4, Coat_5, Coat_6, Coat_7, Coat_8, Coat_9, Coat_10, CoatType_Num }
 
-enum TrousersType { None = -1, Trousers_1, Trousers_2, Trousers_3, Trousers_4, Trousers_5, Trousers_6, Trousers_7, Trousers_8, Trousers_9, Trousers_10 }
+enum TrousersType { None = -1, Trousers_1, Trousers_2, Trousers_3, Trousers_4, Trousers_5, Trousers_6, Trousers_7, Trousers_8, Trousers_9, Trousers_10, TrousersType_Num }
 
-enum RobeType { None = -1, Robe_1, Robe_2, Robe_3, Robe_4, Robe_5, Robe_6, Robe_7, Robe_8, Robe_9, Robe_10 }
+enum RobeType { None = -1, Robe_1, Robe_2, Robe_3, Robe_4, Robe_5, Robe_6, Robe_7, Robe_8, Robe_9, Robe_10, RobeType_Num }
 
-enum MantleType { None = -1, Mantle_1, Mantle_2, Mantle_3, Mantle_4, Mantle_5, Mantle_6, Mantle_7, Mantle_8, Mantle_9, Mantle_10 }
+enum MantleType { None = -1, Mantle_1, Mantle_2, Mantle_3, Mantle_4, Mantle_5, Mantle_6, Mantle_7, Mantle_8, Mantle_9, Mantle_10, MantleType_Num }
 
-enum SkirtType { None = -1, Skirt_1, Skirt_2, Skirt_3, Skirt_4, Skirt_5, Skirt_6, Skirt_7, Skirt_8, Skirt_9, Skirt_10 }
+enum SkirtType { None = -1, Skirt_1, Skirt_2, Skirt_3, Skirt_4, Skirt_5, Skirt_6, Skirt_7, Skirt_8, Skirt_9, Skirt_10, SkirtType_Num }
 
-enum ShoesType { None = -1, Shoes_1, Shoes_2, Shoes_3, Shoes_4, Shoes_5, Shoes_6, Shoes_7, Shoes_8, Shoes_9, Shoes_10 }
+enum ShoesType { None = -1, Shoes_1, Shoes_2, Shoes_3, Shoes_4, Shoes_5, Shoes_6, Shoes_7, Shoes_8, Shoes_9, Shoes_10, ShoesType_Num }
 
 enum HairType { None = -1,
 Hair_1, 
@@ -81,6 +81,8 @@ func _ready():
 	set_process( true )
 	HAIR = randi() % HairType_Num
 	COAT = randi() % CoatType_Num
+	TROUSERS = randi() % TrousersType_Num
+	SHOES = randi() % ShoesType_Num
 	#COAT = 2
 	print( COAT )
 	var animations = $AnimationPlayer.get_animation_list()
@@ -97,6 +99,18 @@ func _ready():
 	animation.track_set_key_value( track, 2, COAT * 12 + 4 )
 	animation.track_set_key_value( track, 3, COAT * 12 + 8 )	
 	
+	track = animation.find_track( "Trousers:frame")
+	animation.track_set_key_value( track, 0, TROUSERS * 12 + 4 )
+	animation.track_set_key_value( track, 1, TROUSERS * 12 + 0 )
+	animation.track_set_key_value( track, 2, TROUSERS * 12 + 4 )
+	animation.track_set_key_value( track, 3, TROUSERS * 12 + 8 )	
+	
+	track = animation.find_track( "Shoes:frame")
+	animation.track_set_key_value( track, 0, SHOES * 12 + 4 )
+	animation.track_set_key_value( track, 1, SHOES * 12 + 0 )
+	animation.track_set_key_value( track, 2, SHOES * 12 + 4 )
+	animation.track_set_key_value( track, 3, SHOES * 12 + 8 )	
+	
 	animation = $AnimationPlayer.get_animation( "WalkUp" )
 	track = animation.find_track( "Hair:frame")
 	animation.track_set_key_value( track, 0, HAIR * 4 + 2 )
@@ -106,6 +120,18 @@ func _ready():
 	animation.track_set_key_value( track, 1, COAT * 12 + 0 + 2 )
 	animation.track_set_key_value( track, 2, COAT * 12 + 4 + 2 )
 	animation.track_set_key_value( track, 3, COAT * 12 + 8 + 2 )	
+
+	track = animation.find_track( "Trousers:frame")
+	animation.track_set_key_value( track, 0, TROUSERS * 12 + 4 + 2 )
+	animation.track_set_key_value( track, 1, TROUSERS * 12 + 0 + 2 )
+	animation.track_set_key_value( track, 2, TROUSERS * 12 + 4 + 2 )
+	animation.track_set_key_value( track, 3, TROUSERS * 12 + 8 + 2 )	
+
+	track = animation.find_track( "Shoes:frame")
+	animation.track_set_key_value( track, 0, SHOES * 12 + 4 + 2 )
+	animation.track_set_key_value( track, 1, SHOES * 12 + 0 + 2 )
+	animation.track_set_key_value( track, 2, SHOES * 12 + 4 + 2 )
+	animation.track_set_key_value( track, 3, SHOES * 12 + 8 + 2 )	
 	
 	
 	animation = $AnimationPlayer.get_animation( "WalkLeft" )
@@ -117,6 +143,18 @@ func _ready():
 	animation.track_set_key_value( track, 1, COAT * 12 + 0 + 1 )
 	animation.track_set_key_value( track, 2, COAT * 12 + 4 + 1 )
 	animation.track_set_key_value( track, 3, COAT * 12 + 8 + 1 )	
+
+	track = animation.find_track( "Trousers:frame")
+	animation.track_set_key_value( track, 0, TROUSERS * 12 + 4 + 1 )
+	animation.track_set_key_value( track, 1, TROUSERS * 12 + 0 + 1 )
+	animation.track_set_key_value( track, 2, TROUSERS * 12 + 4 + 1 )
+	animation.track_set_key_value( track, 3, TROUSERS * 12 + 8 + 1 )	
+
+	track = animation.find_track( "Shoes:frame")
+	animation.track_set_key_value( track, 0, SHOES * 12 + 4 + 1 )
+	animation.track_set_key_value( track, 1, SHOES * 12 + 0 + 1 )
+	animation.track_set_key_value( track, 2, SHOES * 12 + 4 + 1 )
+	animation.track_set_key_value( track, 3, SHOES * 12 + 8 + 1 )	
 	
 	animation = $AnimationPlayer.get_animation( "WalkRight" )
 	track = animation.find_track( "Hair:frame")
@@ -127,6 +165,18 @@ func _ready():
 	animation.track_set_key_value( track, 1, COAT * 12 + 0 + 3 )
 	animation.track_set_key_value( track, 2, COAT * 12 + 4 + 3 )
 	animation.track_set_key_value( track, 3, COAT * 12 + 8 + 3 )	
+
+	track = animation.find_track( "Trousers:frame")
+	animation.track_set_key_value( track, 0, TROUSERS * 12 + 4 + 3 )
+	animation.track_set_key_value( track, 1, TROUSERS * 12 + 0 + 3 )
+	animation.track_set_key_value( track, 2, TROUSERS * 12 + 4 + 3 )
+	animation.track_set_key_value( track, 3, TROUSERS * 12 + 8 + 3 )	
+
+	track = animation.find_track( "Shoes:frame")
+	animation.track_set_key_value( track, 0, SHOES * 12 + 4 + 3 )
+	animation.track_set_key_value( track, 1, SHOES * 12 + 0 + 3 )
+	animation.track_set_key_value( track, 2, SHOES * 12 + 4 + 3 )
+	animation.track_set_key_value( track, 3, SHOES * 12 + 8 + 3 )	
 	
 
 func _process(delta):
