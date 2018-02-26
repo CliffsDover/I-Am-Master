@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Map/untitled.tmx" type="PackedScene" id=1]
+[ext_resource path="res://scenes/CharacterBase.tscn" type="PackedScene" id=2]
+
+[node name="untitled" instance=ExtResource( 1 )]
+
+editor/display_folded = true
+
+[node name="Node2D" parent="." index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 69.2781, 72.3327 )
+
+

@@ -79,6 +79,7 @@ func _ready():
 	randomize()
 	screenSize = get_viewport_rect().size
 	set_process( true )
+	set_physics_process( true )
 	HAIR = randi() % HairType_Num
 	COAT = randi() % CoatType_Num
 	TROUSERS = randi() % TrousersType_Num
@@ -110,9 +111,8 @@ func _ready():
 		animationIndex += 1
 	
 
-	
-
-func _process(delta):
+#func (delta):
+func _physics_process(delta):
 	velocity = Vector2()
 	if Input.is_action_pressed( "ui_right" ):
 		velocity.x += 1
@@ -128,14 +128,28 @@ func _process(delta):
 		$AnimationPlayer.play( "WalkUp" )
 
 	if velocity.length() > 0:
-		velocity = velocity.normalized() * SPEED
+		velocity = velocity * SPEED
 		#$AnimationPlayer.play( "WalkDown" )
 		#$AnimatedSprite.play()
 	#else:
 	#	$AnimationPlayer.stop()
-	position += velocity * delta
+	#print( velocity )
+	if $KinematicBody2D.test_move( transform, velocity ):
+		print( "collided" )
+	#else:
+	position += velocity #* delta
 	position.x = clamp( position.x, 0, screenSize.x )
 	position.y = clamp( position.y, 0, screenSize.y )
+		
+	#var collision = $KinematicBody2D.move_and_collide( velocity )
+	#if collision != null:
+	#	print ( collision.collider_id )
+	#else:
+	#	position += velocity #* delta
+	#	position.x = clamp( position.x, 0, screenSize.x )
+	#	position.y = clamp( position.y, 0, screenSize.y )
+
+		
 
 
 	#if velocity.x != 0:
@@ -158,3 +172,9 @@ func _process(delta):
 #		$AnimationPlayer.play( "WalkDown" )
 		#$AnimatedSprite.animation = "up"
 		#$AnimatedSprite.flip_v = velocity.y > 0
+
+
+func _on_Area2D_area_entered( area ):
+	pass
+	#print( "Character" )
+	#print( area.get_name() )

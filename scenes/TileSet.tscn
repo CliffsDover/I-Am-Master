@@ -1,0 +1,217 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://resources/images/Terrain.png" type="Texture" id=1]
+[ext_resource path="res://resources/images/Items.png" type="Texture" id=2]
+
+[node name="TileSet" type="Node"]
+
+[node name="Base" type="Node" parent="." index="0"]
+
+[node name="1" type="Sprite" parent="Base" index="0"]
+
+texture = ExtResource( 1 )
+vframes = 52
+hframes = 43
+frame = 90
+_sections_unfolded = [ "Animation" ]
+
+[node name="Floors" type="Node" parent="." index="1"]
+
+[node name="1" type="Sprite" parent="Floors" index="0"]
+
+visible = false
+texture = ExtResource( 1 )
+vframes = 52
+hframes = 43
+frame = 262
+_sections_unfolded = [ "Animation" ]
+
+[node name="2" type="Sprite" parent="Floors" index="1"]
+
+visible = false
+texture = ExtResource( 1 )
+vframes = 52
+hframes = 43
+frame = 263
+_sections_unfolded = [ "Animation" ]
+
+[node name="3" type="Sprite" parent="Floors" index="2"]
+
+visible = false
+texture = ExtResource( 1 )
+vframes = 52
+hframes = 43
+frame = 263
+_sections_unfolded = [ "Animation" ]
+
+[node name="Walls" type="Node" parent="." index="2"]
+
+[node name="1" type="Sprite" parent="Walls" index="0"]
+
+visible = false
+texture = ExtResource( 1 )
+vframes = 52
+hframes = 43
+frame = 1191
+_sections_unfolded = [ "Animation" ]
+
+[node name="2" type="Sprite" parent="Walls" index="1"]
+
+visible = false
+texture = ExtResource( 1 )
+vframes = 52
+hframes = 43
+frame = 1192
+_sections_unfolded = [ "Animation" ]
+
+[node name="Obstacles" type="Node" parent="." index="3"]
+
+[node name="1" type="Sprite" parent="Obstacles" index="0"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 84
+_sections_unfolded = [ "Animation" ]
+
+[node name="2" type="Sprite" parent="Obstacles" index="1"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 85
+_sections_unfolded = [ "Animation" ]
+
+[node name="3" type="Sprite" parent="Obstacles" index="2"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 86
+_sections_unfolded = [ "Animation" ]
+
+[node name="4" type="Sprite" parent="Obstacles" index="3"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 87
+_sections_unfolded = [ "Animation" ]
+
+[node name="5" type="Sprite" parent="Obstacles" index="4"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 88
+_sections_unfolded = [ "Animation" ]
+
+[node name="6" type="Sprite" parent="Obstacles" index="5"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 89
+_sections_unfolded = [ "Animation" ]
+
+[node name="7" type="Sprite" parent="Obstacles" index="6"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 90
+_sections_unfolded = [ "Animation" ]
+
+[node name="8" type="Sprite" parent="Obstacles" index="7"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 91
+_sections_unfolded = [ "Animation" ]
+
+[node name="9" type="Sprite" parent="Obstacles" index="8"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 92
+_sections_unfolded = [ "Animation" ]
+
+[node name="10" type="Sprite" parent="Obstacles" index="9"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 93
+_sections_unfolded = [ "Animation" ]
+
+[node name="11" type="Sprite" parent="Obstacles" index="10"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 94
+_sections_unfolded = [ "Animation" ]
+
+[node name="12" type="Sprite" parent="Obstacles" index="11"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 95
+_sections_unfolded = [ "Animation" ]
+
+[node name="Items" type="Node" parent="." index="4"]
+
+[node name="1" type="Sprite" parent="Items" index="0"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 1174
+_sections_unfolded = [ "Animation" ]
+
+[node name="2" type="Sprite" parent="Items" index="1"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 1175
+_sections_unfolded = [ "Animation" ]
+
+[node name="3" type="Sprite" parent="Items" index="2"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 1176
+_sections_unfolded = [ "Animation" ]
+
+[node name="4" type="Sprite" parent="Items" index="3"]
+
+visible = false
+texture = ExtResource( 2 )
+vframes = 63
+hframes = 48
+frame = 1177
+_sections_unfolded = [ "Animation" ]
+
+[node name="Enemies" type="Node" parent="." index="5"]
+
+
