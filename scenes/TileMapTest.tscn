@@ -1,14 +1,37 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://TileSet_Terrain.tres" type="TileSet" id=1]
 [ext_resource path="res://scenes/TileMapTest.gd" type="Script" id=2]
-[ext_resource path="res://scenes/CharacterBase.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/HUD.tscn" type="PackedScene" id=4]
+[ext_resource path="res://TileSet_Terrain2.tres" type="TileSet" id=3]
+[ext_resource path="res://scenes/TileMapTest.tres" type="Animation" id=4]
+[ext_resource path="res://scenes/CharacterBase.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/HUD.tscn" type="PackedScene" id=6]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="Animation" id=2]
 
-custom_solver_bias = 0.0
-extents = Vector2( 10, 10 )
+resource_name = "New Anim"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 24, 24 ), Vector2( 40, 24 ) ]
+}
+tracks/1/type = "transform"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray(  )
 
 [node name="Base" type="TileMap" index="0"]
 
@@ -35,7 +58,7 @@ _sections_unfolded = [ "Cell" ]
 [node name="Terrain" type="TileMap" parent="." index="0"]
 
 mode = 0
-tile_set = ExtResource( 1 )
+tile_set = ExtResource( 3 )
 cell_size = Vector2( 16, 16 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -50,29 +73,33 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 0, 10, 0, 1, 10, 0, 2, 10, 0, 3, 10, 0, 4, 10, 0, 5, 10, 0, 6, 10, 0, 7, 10, 0, 8, 10, 0, 65536, 10, 0, 65537, 10, 0, 65538, 10, 0, 65539, 10, 0, 65540, 10, 0, 65541, 10, 0, 65542, 14, 0, 65543, 10, 0, 65544, 10, 0, 131072, 10, 0, 131073, 10, 0, 131074, 10, 0, 131075, 10, 0, 131076, 10, 0, 131077, 10, 0, 131078, 10, 0, 131079, 10, 0, 131080, 10, 0, 196608, 10, 0, 196609, 10, 0, 196610, 10, 0, 196611, 10, 0, 196612, 15, 0, 196613, 10, 0, 196614, 10, 0, 196615, 10, 0, 196616, 10, 0, 262144, 10, 0, 262145, 10, 0, 262146, 10, 0, 262147, 10, 0, 262148, 10, 0, 262149, 10, 0, 262150, 10, 0, 262151, 10, 0, 262152, 10, 0, 327680, 10, 0, 327681, 14, 0, 327682, 10, 0, 327683, 10, 0, 327684, 10, 0, 327685, 10, 0, 327686, 10, 0, 327687, 10, 0, 327688, 10, 0 )
+tile_data = PoolIntArray( 0, 10, 0, 1, 10, 0, 2, 10, 0, 3, 10, 0, 4, 10, 0, 5, 10, 0, 6, 10, 0, 7, 10, 0, 8, 10, 0, 9, 28, 0, 10, 29, 0, 11, 29, 0, 12, 29, 0, 13, 29, 0, 14, 29, 0, 15, 29, 0, 65536, 10, 0, 65537, 10, 0, 65538, 10, 0, 65539, 10, 0, 65540, 10, 0, 65541, 10, 0, 65542, 14, 0, 65543, 10, 0, 65544, 28, 0, 65545, 29, 0, 65546, 29, 0, 65547, 29, 0, 65548, 29, 0, 65549, 29, 0, 65550, 29, 0, 65551, 29, 0, 131072, 10, 0, 131073, 10, 0, 131074, 10, 0, 131075, 10, 0, 131076, 10, 0, 131077, 10, 0, 131078, 10, 0, 131079, 10, 0, 131080, 28, 0, 131081, 29, 0, 131082, 29, 0, 131083, 29, 0, 131084, 29, 0, 131085, 29, 0, 131086, 29, 0, 131087, 29, 0, 196608, 10, 0, 196609, 10, 0, 196610, 10, 0, 196611, 10, 0, 196612, 15, 0, 196613, 10, 0, 196614, 28, 0, 196615, 28, 0, 196616, 29, 0, 196617, 29, 0, 196618, 29, 0, 196619, 29, 0, 196620, 29, 0, 196621, 29, 0, 196622, 29, 0, 196623, 29, 0, 262144, 10, 0, 262145, 10, 0, 262146, 10, 0, 262147, 10, 0, 262148, 10, 0, 262149, 10, 0, 262150, 28, 0, 262151, 29, 0, 262152, 29, 0, 262153, 29, 0, 262154, 29, 0, 262155, 29, 0, 262156, 29, 0, 262157, 29, 0, 262158, 29, 0, 262159, 29, 0, 327680, 10, 0, 327681, 14, 0, 327682, 10, 0, 327683, 10, 0, 327684, 10, 0, 327685, 10, 0, 327686, 28, 0, 327687, 29, 0, 327688, 29, 0, 327689, 29, 0, 327690, 29, 0, 327691, 29, 0, 327692, 29, 0, 327693, 29, 0, 327694, 29, 0, 327695, 29, 0, 393216, 19, 0, 393217, 19, 0, 393218, 19, 0, 393219, 19, 0, 393220, 19, 0, 393221, 20, 0, 393222, 28, 0, 393223, 28, 0, 393224, 28, 0, 393225, 28, 0, 393226, 28, 0, 393227, 28, 0, 393228, 28, 0, 393229, 28, 0, 393230, 28, 0, 393231, 28, 0, 458752, 19, 0, 458753, 19, 0, 458754, 19, 0, 458755, 19, 0, 458756, 19, 0, 458757, 20, 0, 458758, 20, 0, 458759, 28, 0, 458760, 28, 0, 458761, 28, 0, 458762, 28, 0, 458763, 28, 0, 458764, 28, 0, 458765, 28, 0, 458766, 28, 0, 458767, 28, 0, 524288, 19, 0, 524289, 19, 0, 524290, 19, 0, 524291, 23, 0, 524292, 20, 0, 524293, 20, 0, 524294, 20, 0, 524295, 20, 0, 524296, 20, 0, 524297, 20, 0, 524298, 28, 0, 524299, 28, 0, 524300, 28, 0, 524301, 28, 0, 524302, 28, 0, 524303, 28, 0, 589824, 20, 0, 589825, 23, 0, 589826, 23, 0, 589827, 23, 0, 589828, 21, 0, 589829, 20, 0, 589830, 20, 0, 589831, 20, 0, 589832, 20, 0, 589833, 20, 0, 589834, 19, 0, 589835, 20, 0, 589836, 20, 0, 589837, 20, 0, 589838, 28, 0, 589839, 28, 0, 655360, 21, 0, 655361, 21, 0, 655362, 21, 0, 655363, 21, 0, 655364, 21, 0, 655365, 21, 0, 655366, 21, 0, 655367, 20, 0, 655368, 20, 0, 655369, 20, 0, 655370, 20, 0, 655371, 20, 0, 655372, 20, 0, 655373, 20, 0, 655374, 20, 0, 655375, 20, 0, 720896, 21, 0, 720897, 21, 0, 720898, 27, 0, 720899, 21, 0, 720900, 21, 0, 720901, 21, 0, 720902, 21, 0, 720903, 21, 0, 720904, 22, 0, 720905, 20, 0, 720906, 20, 0, 720907, 20, 0, 720908, 20, 0, 720909, 27, 0, 720910, 20, 0, 720911, 20, 0, 786432, 21, 0, 786433, 21, 0, 786434, 21, 0, 786435, 21, 0, 786436, 21, 0, 786437, 22, 0, 786438, 22, 0, 786439, 22, 0, 786440, 22, 0, 786441, 21, 0, 786442, 20, 0, 786443, 20, 0, 786444, 20, 0, 786445, 20, 0, 786446, 20, 0, 786447, 20, 0, 851968, 21, 0, 851969, 21, 0, 851970, 21, 0, 851971, 21, 0, 851972, 22, 0, 851973, 22, 0, 851974, 22, 0, 851975, 22, 0, 851976, 22, 0, 851977, 22, 0, 851978, 21, 0, 851979, 20, 0, 851980, 20, 0, 851981, 20, 0, 851982, 20, 0, 851983, 21, 0, 917504, 21, 0, 917505, 21, 0, 917506, 21, 0, 917507, 21, 0, 917508, 21, 0, 917509, 21, 0, 917510, 21, 0, 917511, 21, 0, 917512, 21, 0, 917513, 21, 0, 917514, 21, 0, 917515, 21, 0, 917516, 21, 0, 917517, 21, 0, 917518, 21, 0, 917519, 21, 0, 983040, 21, 0, 983041, 27, 0, 983042, 21, 0, 983043, 21, 0, 983044, 21, 0, 983045, 21, 0, 983046, 21, 0, 983047, 21, 0, 983048, 21, 0, 983049, 21, 0, 983050, 21, 0, 983051, 21, 0, 983052, 21, 0, 983053, 21, 0, 983054, 21, 0, 983055, 21, 0 )
 _sections_unfolded = [ "Cell", "Collision" ]
 
-[node name="Player" parent="." index="1" instance=ExtResource( 3 )]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Terrain" index="0"]
 
-position = Vector2( 36, 40 )
+root_node = NodePath("..")
+autoplay = "New Anim"
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+"anims/New Anim" = ExtResource( 4 )
+blend_times = [  ]
 
-[node name="TestArea2D" type="Area2D" parent="." index="2"]
+[node name="Player" parent="." index="1" instance=ExtResource( 5 )]
 
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 24, 24 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TestArea2D" index="0"]
+[node name="HUD" parent="." index="2" instance=ExtResource( 6 )]
 
-position = Vector2( 128, 85 )
-shape = SubResource( 1 )
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="3"]
 
-[node name="HUD" parent="." index="3" instance=ExtResource( 4 )]
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+"anims/New Anim" = SubResource( 2 )
+blend_times = [  ]
 
 

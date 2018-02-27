@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="I Am Master"
-run/main_scene="res://scenes/title.tscn"
+run/main_scene="res://scenes/TileMapTest.tscn"
 config/icon="res://icon.png"
 
 [display]

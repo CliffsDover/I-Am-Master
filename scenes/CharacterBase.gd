@@ -127,19 +127,30 @@ func _physics_process(delta):
 		velocity.y -= 1
 		$AnimationPlayer.play( "WalkUp" )
 
-	if velocity.length() > 0:
-		velocity = velocity * SPEED
+
+	if $MoveAnimationPlayer.is_playing():
+		return
+		
+
 		#$AnimationPlayer.play( "WalkDown" )
 		#$AnimatedSprite.play()
 	#else:
 	#	$AnimationPlayer.stop()
 	#print( velocity )
-	if $KinematicBody2D.test_move( transform, velocity ):
+	if $KinematicBody2D.test_move( transform, velocity * SPEED ):
 		print( "collided" )
-	#else:
-	position += velocity #* delta
-	position.x = clamp( position.x, 0, screenSize.x )
-	position.y = clamp( position.y, 0, screenSize.y )
+	else:
+		#position += velocity #* delta
+		#position.x = clamp( position.x, 0, screenSize.x )
+		#position.y = clamp( position.y, 0, screenSize.y )
+		if velocity.length() > 0:
+			velocity = velocity * SPEED
+			var a = $MoveAnimationPlayer.get_animation( "Move" )
+			var t = a.find_track( ".:position" )
+			a.track_set_key_value( t, 0, position )
+			a.track_set_key_value( t, 1, position + velocity )
+			$MoveAnimationPlayer.play( "Move" )  
+		
 		
 	#var collision = $KinematicBody2D.move_and_collide( velocity )
 	#if collision != null:
