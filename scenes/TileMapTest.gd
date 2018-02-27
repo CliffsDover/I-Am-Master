@@ -35,3 +35,4 @@ func _on_Area2D_area_entered( area, src ):
 	#Vector2 worldPos = Vector2( src.position, src.position.y )
 	var gridPos = $Terrain.world_to_map( src.position )
 	print( str( gridPos.x ) + " " + str( gridPos.y ) )
+	print( $Terrain.tile_set.tile_get_name( $Terrain.get_cell( gridPos.x, gridPos.y ) ) )
