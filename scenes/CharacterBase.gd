@@ -109,7 +109,16 @@ func _ready():
 			trackIndex += 1
 		
 		animationIndex += 1
+		
+
 	
+	
+
+
+func _process(delta):
+	#print($Tween.tell())
+	pass
+
 
 #func (delta):
 func _physics_process(delta):
@@ -156,9 +165,7 @@ func _physics_process(delta):
 	#if collision != null:
 	#	print ( collision.collider_id )
 	#else:
-	#	position += velocity #* delta
-	#	position.x = clamp( position.x, 0, screenSize.x )
-	#	position.y = clamp( position.y, 0, screenSize.y )
+	#	position += velocity #* del
 
 		
 

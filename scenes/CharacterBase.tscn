@@ -288,9 +288,10 @@ extents = Vector2( 4.88044, 10 )
 
 [node name="Node2D" type="Node2D"]
 
+editor/display_folded = true
 position = Vector2( -0.122183, 0 )
 script = ExtResource( 1 )
-_sections_unfolded = [ "Material", "Transform", "Z Index" ]
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
 SPEED = 16
 BODY = 0
 HAIR = 0
@@ -357,6 +358,7 @@ _sections_unfolded = [ "Playback Options" ]
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="." index="6"]
 
+editor/display_folded = true
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -369,7 +371,6 @@ shape = SubResource( 5 )
 
 [node name="CharacterArea2D" type="Area2D" parent="." index="7"]
 
-editor/display_folded = true
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
 gravity = 98.0
@@ -377,6 +378,7 @@ linear_damp = 0.1
 angular_damp = 1.0
 audio_bus_override = false
 audio_bus_name = "Master"
+_sections_unfolded = [ "Collision" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterArea2D" index="0"]
 
@@ -392,6 +394,16 @@ playback_speed = 1.0
 anims/Move = ExtResource( 7 )
 blend_times = [  ]
 _sections_unfolded = [ "Playback Options" ]
+
+[node name="Tween" type="Tween" parent="." index="9"]
+
+repeat = false
+playback_process_mode = 1
+playback_speed = 1.0
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+_sections_unfolded = [ "playback" ]
 
 [connection signal="area_entered" from="CharacterArea2D" to="." method="_on_Area2D_area_entered"]
 
