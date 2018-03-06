@@ -22,6 +22,12 @@ func _ready():
 	#region.position = Vector2( ( currentRegion.x + 1 ) * 256, ( currentRegion.y + 0 ) * 256 )
 	$Regions.add_child( region )
 	
+	region = LoadRegion( currentRegion.x + 0 , currentRegion.y + 1 )
+	$Regions.add_child( region )
+	
+	region = LoadRegion( currentRegion.x + 0 , currentRegion.y - 1 )
+	$Regions.add_child( region )
+	
 	ListAllRegions()
 	
 	pass
@@ -51,6 +57,26 @@ func _process(delta):
 			$TweenEffect.interpolate_property( $Camera, "position", $Camera.position, $Camera.position - Vector2( 256, 0 ), 1, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT ) 
 			$TweenEffect.connect( "tween_completed", self, "on_tween_completed" )
 			$TweenEffect.start()
+		elif $Player.position.y >= ( $Camera.position.y + screenSize.y - 8 + 16 ):# or $Player.position.x < 0:
+			#print( "player exited" )
+			#$Player.get_node( "CharacterArea2D" ).monitoring = false
+			#$Terrain2.position = $Terrain.position + Vector2( 256, 0 )
+			#$TweenEffect.interpolate_property($Region_Current, "position", $Region_Current.position, $Region_Current.position-Vector2(256,0), 1, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			#$TweenEffect.interpolate_property($Region_East, "position", $Region_East.position, $Region_East.position-Vector2(256,0), 1, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			#$TweenEffect.interpolate_property($Player, "position", $Player.position, $Player.position-Vector2(256,0), 1, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			$TweenEffect.interpolate_property( $Camera, "position", $Camera.position, $Camera.position + Vector2( 0, 256 ), 1, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT ) 
+			$TweenEffect.connect( "tween_completed", self, "on_tween_completed" )
+			$TweenEffect.start()
+		elif $Player.position.y <= ( $Camera.position.y - 8):
+			#print( "player exited" )
+			#$Player.get_node( "CharacterArea2D" ).monitoring = false
+			#$Terrain2.position = $Terrain.position - Vector2( 256, 0 )
+			#$TweenEffect.interpolate_property($Region_Current, "position", $Region_Current.position, $Region_Current.position+Vector2(256,0), 1, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			#$TweenEffect.interpolate_property($Region_West, "position", $Region_West.position, $Region_West.position+Vector2(256,0), 1, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			#$TweenEffect.interpolate_property($Player, "position", $Player.position, $Player.position+Vector2(256,0), 1, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+			$TweenEffect.interpolate_property( $Camera, "position", $Camera.position, $Camera.position - Vector2( 0, 256 ), 1, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT ) 
+			$TweenEffect.connect( "tween_completed", self, "on_tween_completed" )
+			$TweenEffect.start()	
 
 func LoadRegion( x, y ):
 	#print( "res://scenes/Region_" + str( x ) + "_" + str( y ) + ".tscn" )
@@ -87,7 +113,7 @@ func on_tween_completed( obj, path ):
 	#region.position = Vector2( ( currentRegion.x + 1 ) * 256, ( currentRegion.y + 0 ) * 256 )
 	#$Regions.add_child( region )
 	
-	var nearbyRegions = [ Vector2( currentRegion.x, currentRegion.y ), Vector2( currentRegion.x - 1, currentRegion.y ), Vector2( currentRegion.x + 1, currentRegion.y ) ]
+	var nearbyRegions = [ Vector2( currentRegion.x, currentRegion.y ), Vector2( currentRegion.x - 1, currentRegion.y ), Vector2( currentRegion.x + 1, currentRegion.y ), Vector2( currentRegion.x , currentRegion.y - 1 ), Vector2( currentRegion.x, currentRegion.y + 1 ) ]
 	var nearbyRegionsNames = []
 	for nearbyRegion in nearbyRegions:
 		var nearbyRegionName = "Region_" + str( nearbyRegion.x ) + "_" + str( nearbyRegion.y )
