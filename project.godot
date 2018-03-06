@@ -11,8 +11,9 @@ config_version=3
 [application]
 
 config/name="I Am Master"
-run/main_scene="res://scenes/TileMapTest.tscn"
+run/main_scene="res://scenes/World.tscn"
 config/icon="res://icon.png"
+run/size/borderless=false
 
 [display]
 
