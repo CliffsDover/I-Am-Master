@@ -34,6 +34,8 @@ func _ready():
 
 func _process(delta):
 	$HUD/FPSLabel.text = "FPS:" + str( Engine.get_frames_per_second() )
+	$HUD/PositionLabel.text = "Position: ( " + str( int( $Player.position.x ) ) + ", " + str( int( $Player.position.y ) ) + " )"
+	$HUD/RegionLabel.text = "Region: ( " + str( int( currentRegion.x ) ) + ", " + str( int( currentRegion.y ) ) + " )"
 	#print( get_viewport_rect().position.x )
 	
 	if not $TweenEffect.is_active():
@@ -80,22 +82,30 @@ func _process(delta):
 
 func LoadRegion( x, y ):
 	#print( "res://scenes/Region_" + str( x ) + "_" + str( y ) + ".tscn" )
-	var region = load( "res://scenes/Region_" + str( x ) + "_" + str( y ) + ".tscn" ).instance()
-	region.name = "Region_" + str( x ) + "_" + str( y )
-	region.position = Vector2( 256 * x, 256 * y )
-	return region
+	var fileName = "res://scenes/Region_" + str( x ) + "_" + str( y ) + ".tscn"
+	if Directory.new().file_exists( fileName ):
+		var region = load( fileName ).instance()
+		region.name = "Region_" + str( x ) + "_" + str( y )
+		region.position = Vector2( 256 * x, 256 * y )
+		return region
+	else:
+		return null
 	
 func LoadRegionByName( regionName ):
+	var fileName = "res://scenes/" + regionName + ".tscn"
 	#print( "res://scenes/Region_" + str( x ) + "_" + str( y ) + ".tscn" )
-	var region = load( "res://scenes/" + regionName + ".tscn" ).instance()
-	region.name = regionName
-	var regionPostfix = regionName.split( "Region_" )[1]
-	var regionPosition = regionPostfix.split( "_" )
-	var x = int( regionPosition[0] )
-	var y = int( regionPosition[1] )
-	print( "[LoadRegionByName] res://scenes/Region_" + str( x ) + "_" + str( y ) + ".tscn" )
-	region.position = Vector2( 256 * x, 256 * y )
-	return region
+	if Directory.new().file_exists( fileName ):
+		var region = load( fileName ).instance()
+		region.name = regionName
+		var regionPostfix = regionName.split( "Region_" )[1]
+		var regionPosition = regionPostfix.split( "_" )
+		var x = int( regionPosition[0] )
+		var y = int( regionPosition[1] )
+		print( "[LoadRegionByName] res://scenes/Region_" + str( x ) + "_" + str( y ) + ".tscn" )
+		region.position = Vector2( 256 * x, 256 * y )
+		return region
+	else:
+		return null
 
 func on_tween_completed( obj, path ):
 	#print ( obj.get_name() )
@@ -106,7 +116,17 @@ func on_tween_completed( obj, path ):
 		#$Terrain.replace_by( $Terrain2 )
 		#$Terrain.position = $Terrain2.position
 	print( $Player.position.x )
-	currentRegion = Vector2( int( ( $Player.position.x - 128 ) / 128 ), int( ( $Player.position.y - 128 ) / 128 ) )
+	print( $Player.position.y )
+	
+	var negX = 0
+	if $Player.position.x < 0:
+		negX = 1
+
+	var negY = 0
+	if $Player.position.y < 0:
+		negY = 1
+		
+	currentRegion = Vector2( int( ( $Player.position.x ) / 256 - negX ), int( ( $Player.position.y ) / 256 - negY ) )
 	
 	print( "Current region:" + str( currentRegion.x ) + "," + str( currentRegion.y ) ) 
 	#var region = LoadRegion( currentRegion.x + 1 , currentRegion.y + 0 )
