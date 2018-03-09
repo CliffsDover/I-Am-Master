@@ -272,11 +272,1043 @@ region_enabled = true
 region_rect = Rect2( 96, 176, 16, 16 )
 _sections_unfolded = [ "Animation", "Region" ]
 
-[node name="FreshWater_1_Collidable" type="Sprite" parent="." index="28"]
+[node name="Farm_1" type="Sprite" parent="." index="28"]
 
+position = Vector2( 136, 136 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 192, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Farm_2" type="Sprite" parent="." index="29"]
+
+position = Vector2( 168, 136 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 192, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Farm_3" type="Sprite" parent="." index="30"]
+
+position = Vector2( 200, 136 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 192, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Farm_4" type="Sprite" parent="." index="31"]
+
+position = Vector2( 40, 168 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 208, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Farm_5" type="Sprite" parent="." index="32"]
+
+position = Vector2( 72, 168 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 208, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Farm_6" type="Sprite" parent="." index="33"]
+
+position = Vector2( 104, 168 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 208, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Farm_7" type="Sprite" parent="." index="34"]
+
+position = Vector2( 136, 168 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 224, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Farm_8" type="Sprite" parent="." index="35"]
+
+position = Vector2( 168, 168 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 224, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Farm_9" type="Sprite" parent="." index="36"]
+
+position = Vector2( 200, 168 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 224, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Farm_10" type="Sprite" parent="." index="37"]
+
+position = Vector2( 40, 200 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 240, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Farm_11" type="Sprite" parent="." index="38"]
+
+position = Vector2( 72, 200 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 240, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Farm_12" type="Sprite" parent="." index="39"]
+
+position = Vector2( 104, 200 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 240, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Flower_1" type="Sprite" parent="." index="40"]
+
+position = Vector2( 136, 200 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 256, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Flower_2" type="Sprite" parent="." index="41"]
+
+position = Vector2( 168, 200 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 256, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Flower_3" type="Sprite" parent="." index="42"]
+
+position = Vector2( 200, 200 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 256, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Flower_4" type="Sprite" parent="." index="43"]
+
+position = Vector2( 40, 232 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 272, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Flower_5" type="Sprite" parent="." index="44"]
+
+position = Vector2( 72, 232 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 272, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Flower_6" type="Sprite" parent="." index="45"]
+
+position = Vector2( 104, 232 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 272, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Flower_7" type="Sprite" parent="." index="46"]
+
+position = Vector2( 136, 232 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 288, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Flower_8" type="Sprite" parent="." index="47"]
+
+position = Vector2( 168, 232 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 288, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Flower_9" type="Sprite" parent="." index="48"]
+
+position = Vector2( 200, 232 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 288, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Flower_10" type="Sprite" parent="." index="49"]
+
+position = Vector2( 40, 264 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 304, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Flower_11" type="Sprite" parent="." index="50"]
+
+position = Vector2( 72, 264 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 304, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Flower_12" type="Sprite" parent="." index="51"]
+
+position = Vector2( 104, 264 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 304, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Soil_Sand_1" type="Sprite" parent="." index="52"]
+
+position = Vector2( 136, 264 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 320, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Soil_Sand_2" type="Sprite" parent="." index="53"]
+
+position = Vector2( 168, 264 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 320, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Grass_Sand_1" type="Sprite" parent="." index="54"]
+
+position = Vector2( 200, 264 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 336, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Grass_Sand_2" type="Sprite" parent="." index="55"]
+
+position = Vector2( 40, 296 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 336, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Grass_Soil_1" type="Sprite" parent="." index="56"]
+
+position = Vector2( 72, 296 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 352, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Grass_Soil_2" type="Sprite" parent="." index="57"]
+
+position = Vector2( 104, 296 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 352, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_1" type="Sprite" parent="." index="58"]
+
+position = Vector2( 136, 296 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 368, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_2" type="Sprite" parent="." index="59"]
+
+position = Vector2( 168, 296 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 368, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_3" type="Sprite" parent="." index="60"]
+
+position = Vector2( 200, 296 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 368, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_4" type="Sprite" parent="." index="61"]
+
+position = Vector2( 40, 328 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 384, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_5" type="Sprite" parent="." index="62"]
+
+position = Vector2( 72, 328 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 384, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_6" type="Sprite" parent="." index="63"]
+
+position = Vector2( 104, 328 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 384, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_7" type="Sprite" parent="." index="64"]
+
+position = Vector2( 136, 328 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 400, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_8" type="Sprite" parent="." index="65"]
+
+position = Vector2( 168, 328 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 400, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_9" type="Sprite" parent="." index="66"]
+
+position = Vector2( 200, 328 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 400, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_10" type="Sprite" parent="." index="67"]
+
+position = Vector2( 40, 360 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 416, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_11" type="Sprite" parent="." index="68"]
+
+position = Vector2( 72, 360 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 416, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_12" type="Sprite" parent="." index="69"]
+
+position = Vector2( 104, 360 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 416, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_13" type="Sprite" parent="." index="70"]
+
+position = Vector2( 136, 360 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 432, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_14" type="Sprite" parent="." index="71"]
+
+position = Vector2( 168, 360 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 432, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_15" type="Sprite" parent="." index="72"]
+
+position = Vector2( 200, 360 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 432, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_16" type="Sprite" parent="." index="73"]
+
+position = Vector2( 40, 392 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 448, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_17" type="Sprite" parent="." index="74"]
+
+position = Vector2( 72, 392 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 448, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_18" type="Sprite" parent="." index="75"]
+
+position = Vector2( 104, 392 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 448, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_19" type="Sprite" parent="." index="76"]
+
+position = Vector2( 136, 392 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 464, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_20" type="Sprite" parent="." index="77"]
+
+position = Vector2( 168, 392 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 464, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_21" type="Sprite" parent="." index="78"]
+
+position = Vector2( 200, 392 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 464, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_22" type="Sprite" parent="." index="79"]
+
+position = Vector2( 40, 424 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 480, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_23" type="Sprite" parent="." index="80"]
+
+position = Vector2( 72, 424 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 480, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_24" type="Sprite" parent="." index="81"]
+
+position = Vector2( 104, 424 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 480, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_25" type="Sprite" parent="." index="82"]
+
+position = Vector2( 136, 424 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 496, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_26" type="Sprite" parent="." index="83"]
+
+position = Vector2( 168, 424 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 496, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_27" type="Sprite" parent="." index="84"]
+
+position = Vector2( 200, 424 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 496, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_28" type="Sprite" parent="." index="85"]
+
+position = Vector2( 40, 456 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 512, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_29" type="Sprite" parent="." index="86"]
+
+position = Vector2( 72, 456 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 512, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_30" type="Sprite" parent="." index="87"]
+
+position = Vector2( 104, 456 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 512, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_31" type="Sprite" parent="." index="88"]
+
+position = Vector2( 136, 456 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 528, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_32" type="Sprite" parent="." index="89"]
+
+position = Vector2( 168, 456 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 528, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Tree_33" type="Sprite" parent="." index="90"]
+
+position = Vector2( 200, 456 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 528, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_1" type="Sprite" parent="." index="91"]
+
+position = Vector2( 40, 488 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 544, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_2" type="Sprite" parent="." index="92"]
+
+position = Vector2( 72, 488 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 544, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_3" type="Sprite" parent="." index="93"]
+
+position = Vector2( 104, 488 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 544, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_4" type="Sprite" parent="." index="94"]
+
+position = Vector2( 136, 488 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 560, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_5" type="Sprite" parent="." index="95"]
+
+position = Vector2( 168, 488 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 560, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_6" type="Sprite" parent="." index="96"]
+
+position = Vector2( 200, 488 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 560, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_7" type="Sprite" parent="." index="97"]
+
+position = Vector2( 40, 520 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 576, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_8" type="Sprite" parent="." index="98"]
+
+position = Vector2( 72, 520 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 576, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_9" type="Sprite" parent="." index="99"]
+
+position = Vector2( 104, 520 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 576, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_10" type="Sprite" parent="." index="100"]
+
+position = Vector2( 136, 520 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 592, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_11" type="Sprite" parent="." index="101"]
+
+position = Vector2( 168, 520 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 592, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_12" type="Sprite" parent="." index="102"]
+
+position = Vector2( 200, 520 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 592, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_13" type="Sprite" parent="." index="103"]
+
+position = Vector2( 40, 552 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 608, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_14" type="Sprite" parent="." index="104"]
+
+position = Vector2( 72, 552 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 608, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_15" type="Sprite" parent="." index="105"]
+
+position = Vector2( 104, 552 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 608, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_16" type="Sprite" parent="." index="106"]
+
+position = Vector2( 136, 552 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 624, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_17" type="Sprite" parent="." index="107"]
+
+position = Vector2( 168, 552 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 624, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_18" type="Sprite" parent="." index="108"]
+
+position = Vector2( 200, 552 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 624, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_19" type="Sprite" parent="." index="109"]
+
+position = Vector2( 40, 584 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 640, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_20" type="Sprite" parent="." index="110"]
+
+position = Vector2( 72, 584 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 640, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_21" type="Sprite" parent="." index="111"]
+
+position = Vector2( 104, 584 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 640, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_22" type="Sprite" parent="." index="112"]
+
+position = Vector2( 136, 584 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 656, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_23" type="Sprite" parent="." index="113"]
+
+position = Vector2( 168, 584 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 656, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_24" type="Sprite" parent="." index="114"]
+
+position = Vector2( 200, 584 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 656, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_25" type="Sprite" parent="." index="115"]
+
+position = Vector2( 40, 616 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 672, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_26" type="Sprite" parent="." index="116"]
+
+position = Vector2( 72, 616 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 672, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Tree_27" type="Sprite" parent="." index="117"]
+
+position = Vector2( 104, 616 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 672, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Mushroom_1" type="Sprite" parent="." index="118"]
+
+position = Vector2( 136, 616 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 688, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Mushroom_2" type="Sprite" parent="." index="119"]
+
+position = Vector2( 168, 616 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 688, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Mushroom_3" type="Sprite" parent="." index="120"]
+
+position = Vector2( 200, 616 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 688, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Mushroom_4" type="Sprite" parent="." index="121"]
+
+position = Vector2( 40, 648 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 704, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Mushroom_5" type="Sprite" parent="." index="122"]
+
+position = Vector2( 72, 648 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 704, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Mushroom_6" type="Sprite" parent="." index="123"]
+
+position = Vector2( 104, 648 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 704, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Mushroom_7" type="Sprite" parent="." index="124"]
+
+position = Vector2( 136, 648 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 720, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Mushroom_8" type="Sprite" parent="." index="125"]
+
+position = Vector2( 168, 648 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 720, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Mushroom_9" type="Sprite" parent="." index="126"]
+
+position = Vector2( 200, 648 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 720, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Mushroom_10" type="Sprite" parent="." index="127"]
+
+position = Vector2( 40, 680 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 736, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Mushroom_11" type="Sprite" parent="." index="128"]
+
+position = Vector2( 72, 680 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 736, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Mushroom_12" type="Sprite" parent="." index="129"]
+
+position = Vector2( 104, 680 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 736, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Fungi_1" type="Sprite" parent="." index="130"]
+
+position = Vector2( 136, 680 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 752, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Fungi_2" type="Sprite" parent="." index="131"]
+
+position = Vector2( 168, 680 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 752, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Fungi_3" type="Sprite" parent="." index="132"]
+
+position = Vector2( 200, 680 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 752, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Fungi_4" type="Sprite" parent="." index="133"]
+
+position = Vector2( 40, 712 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 768, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Fungi_5" type="Sprite" parent="." index="134"]
+
+position = Vector2( 72, 712 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 768, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Fungi_6" type="Sprite" parent="." index="135"]
+
+position = Vector2( 104, 712 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 768, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Fungi_7" type="Sprite" parent="." index="136"]
+
+position = Vector2( 136, 712 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 784, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Fungi_8" type="Sprite" parent="." index="137"]
+
+position = Vector2( 168, 712 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 784, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Fungi_9" type="Sprite" parent="." index="138"]
+
+position = Vector2( 200, 712 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 784, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Damp_1" type="Sprite" parent="." index="139"]
+
+position = Vector2( 40, 744 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 64, 800, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Damp_2" type="Sprite" parent="." index="140"]
+
+position = Vector2( 72, 744 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 80, 800, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Damp_3" type="Sprite" parent="." index="141"]
+
+position = Vector2( 104, 744 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 800, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Cactus_1" type="Sprite" parent="." index="142"]
+
+position = Vector2( 136, 744 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 176, 704, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Cactus_2" type="Sprite" parent="." index="143"]
+
+position = Vector2( 168, 744 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 192, 704, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Cactus_3" type="Sprite" parent="." index="144"]
+
+position = Vector2( 200, 744 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 208, 704, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Bush_1" type="Sprite" parent="." index="145"]
+
+position = Vector2( 40, 776 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 176, 720, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Bush_2" type="Sprite" parent="." index="146"]
+
+position = Vector2( 72, 776 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 192, 720, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Bush_3" type="Sprite" parent="." index="147"]
+
+position = Vector2( 104, 776 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 208, 720, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Bush_4" type="Sprite" parent="." index="148"]
+
+position = Vector2( 136, 776 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 176, 736, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Bush_5" type="Sprite" parent="." index="149"]
+
+position = Vector2( 168, 776 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 192, 736, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Bush_6" type="Sprite" parent="." index="150"]
+
+position = Vector2( 200, 776 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 208, 736, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Bush_7" type="Sprite" parent="." index="151"]
+
+position = Vector2( 40, 808 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 176, 752, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Bush_8" type="Sprite" parent="." index="152"]
+
+position = Vector2( 72, 808 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 192, 752, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Bush_9" type="Sprite" parent="." index="153"]
+
+position = Vector2( 104, 808 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 208, 752, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Bush_1" type="Sprite" parent="." index="154"]
+
+position = Vector2( 136, 808 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 176, 768, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Bush_2" type="Sprite" parent="." index="155"]
+
+position = Vector2( 168, 808 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 192, 768, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="Withered_Bush_3" type="Sprite" parent="." index="156"]
+
+position = Vector2( 200, 808 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 208, 768, 16, 16 )
+_sections_unfolded = [ "Animation", "Offset", "Region" ]
+
+[node name="FreshWater_1_Collidable" type="Sprite" parent="." index="157"]
+
+editor/display_folded = true
 position = Vector2( 232, 8 )
 texture = ExtResource( 1 )
-frame = 11
 region_enabled = true
 region_rect = Rect2( 400, 32, 16, 16 )
 _sections_unfolded = [ "Animation", "Offset", "Region" ]
@@ -295,7 +1327,7 @@ bounce = 0.0
 
 shape = SubResource( 3 )
 
-[node name="FreshWater_1" type="Sprite" parent="." index="29"]
+[node name="FreshWater_1" type="Sprite" parent="." index="158"]
 
 position = Vector2( 232, 40 )
 texture = ExtResource( 1 )
